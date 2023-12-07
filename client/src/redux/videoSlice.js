@@ -11,7 +11,7 @@ export const fetchVideoDetails = createAsyncThunk(
   async (videoUrl, { rejectWithValue }) => {
     try {
       const response = await fetch(
-        "http://localhost:8080/api/getVideoDetails",
+        "https://anchors-2mv7.onrender.com/api/getVideoDetails",
         {
           method: "POST",
           headers: {

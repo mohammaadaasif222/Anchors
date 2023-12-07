@@ -20,7 +20,7 @@ const Form = ({ close, setAlert }) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8080/api/send-email", {
+      const response = await fetch("https://anchors-2mv7.onrender.com/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
