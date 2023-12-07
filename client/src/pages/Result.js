@@ -52,7 +52,7 @@ const Result = () => {
               </div>
               <div className="w-[255px] flex-col justify-start items-start gap-[11px] inline-flex">
                 <div className="self-stretch h-[50px] text-white text-md font-medium font-['Inter']">
-                  {title}
+                  {title.substring(0,40)}
                 </div>
                 <div className="flex-col justify-start items-start gap-3 flex">
                   <div className="justify-start items-center gap-2 inline-flex">
@@ -140,15 +140,20 @@ const Result = () => {
                 scope="row"
                 className="px-6 py-10 text-white whitespace-nowrap dark:text-white text-opacity-80 text-base font-normal font-['Inter']"
               >
-                Rank
+                89
               </th>
-              <td className="px-6 py-4">Title</td>
-              <td className="px-6 py-4">Thumbnail</td>
-              <td className="px-6 py-4">$2999</td>
-              <td className="px-6 py-4">$2999</td>
-              <td className="px-6 py-4">$2999</td>
-              <td className="px-6 py-4">$2999</td>
-              <td className="px-6 py-4">$2999</td>
+              <td className="px-6 py-4">{title.substring(0,5)}</td>
+              <td className="px-6 py-4">
+                <img
+                  className="w-20 h-20"
+                  src={thumbnail || "https://via.placeholder.com/240x135"}
+                />
+              </td>
+              <td className="px-6 py-4">{views}</td>
+              <td className="px-6 py-4">{likes}</td>
+              <td className="px-6 py-4">{comments}</td>
+              <td className="px-6 py-4">{uploadedOn}</td>
+              <td className="px-6 py-4">{earnings}</td>
             </tr>
           </tbody>
         </table>

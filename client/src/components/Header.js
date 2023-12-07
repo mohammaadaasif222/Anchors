@@ -1,5 +1,11 @@
 import Dialogue from './Dialogue'
+import {resetVideoState} from '../redux/videoSlice'
+import {useDispatch} from 'react-redux'
 export default function Header() {
+  const dispatch = useDispatch();
+  const handleCheck=()=>{
+    dispatch(resetVideoState())
+  }
   return (
     <header className="bg-[##101010]">
       <div className="w-full h-[76px] px-36 py-4 bg-stone-950 justify-between items-center inline-flex">
@@ -24,6 +30,7 @@ export default function Header() {
               <div className="text-white text-opacity-0 text-xl font-normal font-['Inter'] leading-normal">
                 <Dialogue/>
               </div>
+                <button className='text-white text-xs' onClick={handleCheck}>Check Another video</button>
             </div>
           </div>
         </div>
