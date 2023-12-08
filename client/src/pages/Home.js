@@ -75,6 +75,7 @@ const Home = () => {
                 className="grow bg-transparent  text-slate-700 focus:ring-black w-full shrink basis-0 h-12 px-[39px] py-3 rounded-full border border-slate-500 border-opacity-50 justify-start items-center gap-2.5 flex"
                 onChange={(e) => setVideoUrl(e.target.value)}
                 placeholder="Enter youtube link here"
+                  required 
               />
 
               <button
