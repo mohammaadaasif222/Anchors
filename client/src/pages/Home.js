@@ -35,8 +35,12 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(videoUrl!==""){
     simulateProgress();
     setVideoUrl("");
+    }else{
+      return alert("enter the url first");
+    }
   };
 
   return (
