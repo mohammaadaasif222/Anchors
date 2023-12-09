@@ -7,6 +7,7 @@ import {
 import Home from './pages/Home'
 import Result from './pages/Result'
 import Header from './components/Header'
+import Navbar from "./components/Navbar";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
@@ -19,7 +20,8 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="font-bodyFont">
-      <Header/>
+      {/* <Header/> */}
+      <Navbar/>
       <RouterProvider router={router} />
     </div>
   );

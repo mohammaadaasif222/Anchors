@@ -41,9 +41,9 @@ const Home = () => {
 
   return (
     <div className="w-full flex py-10">
-      <div className="w-[713px] m-auto h-[348px] flex-col justify-start items-start gap-[60px] inline-flex">
+      <div className="md:w-[713px] lg:w-[713px] sm:w-full m-auto h-[348px] flex-col justify-start items-start gap-[60px] inline-flex">
         <div className="h-60 flex-col justify-start items-center gap-6 flex">
-          <div className="w-[741px] text-center text-white text-[50px] font-bold font-['Inter'] leading-[72px]">
+          <div className="md:w-[741px]  lg:w-[741px] sm:w-full text-center text-white text-[50px] font-bold font-['Inter'] leading-[72px]">
             Discover your earning potential
           </div>
           <div className="text-center text-white text-opacity-80 text-2xl font-normal font-['Inter'] leading-9">
@@ -52,7 +52,7 @@ const Home = () => {
             through resource sharing
           </div>
         </div>
-        <div className="w-[713px] justify-start items-center gap-5 inline-flex">
+        <div className="md:w-[713px] lg:w-[713px] sm:w-full justify-start items-center gap-5 inline-flex">
           {progress > 0 && progress < 100 ? (
             <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
